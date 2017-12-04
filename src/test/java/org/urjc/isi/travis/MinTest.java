@@ -19,17 +19,17 @@ public class MinTest
       list = null;  // redundant in this example!
    }
 
-   @Test
-   public void testForNullList()
-   {
-      list = null;
-      try {
-         Min.min (list);
-      } catch (NullPointerException e) {
-         return;
-      }
-      fail ("NullPointerException expected");
-   }
+//   @Test
+//  public void testForNullList()
+//   {
+//      list = null;
+//      try {
+//         Min.min (list);
+//      } catch (NullPointerException e) {
+//         return;
+//      }
+//      fail ("NullPointerException expected");
+//   }
 
    @Test (expected = NullPointerException.class)
    public void testForNullElement()
